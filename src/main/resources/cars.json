@@ -1,0 +1,22 @@
+[ {
+  "brand" : "Audi",
+  "model" : "A4",
+  "year" : 2009,
+  "automatic" : true,
+  "horsePower" : 143,
+  "odometer" : 235000.0
+}, {
+  "brand" : "Volkswagen",
+  "model" : "Golf 5",
+  "year" : 2006,
+  "automatic" : false,
+  "horsePower" : 90,
+  "odometer" : 202000.0
+}, {
+  "brand" : "Ford",
+  "model" : "Galaxy",
+  "year" : 2002,
+  "automatic" : false,
+  "horsePower" : 131,
+  "odometer" : 245000.0
+} ]
