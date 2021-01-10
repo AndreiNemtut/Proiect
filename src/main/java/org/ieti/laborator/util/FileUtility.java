@@ -32,7 +32,8 @@ public class FileUtility {
 
         try {
             String json = new String(Files.readAllBytes(Paths.get("src/main/resources/cars.json")));
-            return mapper.readValue(json, new TypeReference<List<Car>>(){});
+            return mapper.readValue(json, new TypeReference<List<Car>>() {
+            });
         } catch (IOException e) {
             e.printStackTrace();
         }

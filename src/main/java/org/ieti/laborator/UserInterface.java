@@ -105,12 +105,12 @@ public class UserInterface {
 
         isAutomatic = new JRadioButton();
         isAutomatic.setText("Automatic");
-        isAutomatic.setBounds(INPUT_ALLIGNMENT,ROW_4,INPUT_WIDTH,FIELD_HEIGHT);
+        isAutomatic.setBounds(INPUT_ALLIGNMENT, ROW_4, INPUT_WIDTH, FIELD_HEIGHT);
         panel.add(isAutomatic);
 
         isManual = new JRadioButton();
         isManual.setText("Manual");
-        isManual.setBounds(INPUT_ALLIGNMENT,ROW_5,INPUT_WIDTH,FIELD_HEIGHT);
+        isManual.setBounds(INPUT_ALLIGNMENT, ROW_5, INPUT_WIDTH, FIELD_HEIGHT);
         panel.add(isManual);
 
         ButtonGroup gearButtonGroup = new ButtonGroup();
@@ -143,9 +143,9 @@ public class UserInterface {
                     car.setBrand(brandInput.getText());
                     car.setModel(modelInput.getText());
 
-                    if(isAutomatic.isSelected())
+                    if (isAutomatic.isSelected())
                         car.setAutomatic(true);
-                    else if(isManual.isSelected())
+                    else if (isManual.isSelected())
                         car.setAutomatic(false);
                     else {
                         noGearButtonSelected();
@@ -173,7 +173,7 @@ public class UserInterface {
                         noError = false;
                     }
 
-                    if(noError) {
+                    if (noError) {
                         carList.add(car);
                         clearPanel(panel);
                         showMenuPage(panel);
@@ -228,15 +228,15 @@ public class UserInterface {
 
         isAutomatic = new JRadioButton();
         isAutomatic.setText("Automatic");
-        isAutomatic.setBounds(INPUT_ALLIGNMENT,ROW_4,INPUT_WIDTH,FIELD_HEIGHT);
-        if(car.isAutomatic())
+        isAutomatic.setBounds(INPUT_ALLIGNMENT, ROW_4, INPUT_WIDTH, FIELD_HEIGHT);
+        if (car.isAutomatic())
             isAutomatic.setSelected(true);
         panel.add(isAutomatic);
 
         isManual = new JRadioButton();
         isManual.setText("Manual");
-        isManual.setBounds(INPUT_ALLIGNMENT,ROW_5,INPUT_WIDTH,FIELD_HEIGHT);
-        if(!car.isAutomatic())
+        isManual.setBounds(INPUT_ALLIGNMENT, ROW_5, INPUT_WIDTH, FIELD_HEIGHT);
+        if (!car.isAutomatic())
             isManual.setSelected(true);
         panel.add(isManual);
 
@@ -270,9 +270,9 @@ public class UserInterface {
                     car.setBrand(brandInput.getText());
                     car.setModel(modelInput.getText());
 
-                    if(isAutomatic.isSelected())
+                    if (isAutomatic.isSelected())
                         car.setAutomatic(true);
-                    else if(isManual.isSelected())
+                    else if (isManual.isSelected())
                         car.setAutomatic(false);
                     else {
                         noGearButtonSelected();
@@ -307,7 +307,7 @@ public class UserInterface {
                         showModifyPage(panel, car);
                         noError = false;
                     }
-                    if(noError) {
+                    if (noError) {
                         clearPanel(panel);
                         showListPage(panel);
                     }
